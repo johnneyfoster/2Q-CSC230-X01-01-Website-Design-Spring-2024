@@ -1,11 +1,13 @@
-﻿/*
+﻿@charset "utf-8";
+
+/*
    New Perspectives on HTML5 and CSS3, 8th Edition
    Tutorial 2
    Tutorial Case
    
    TSS Typographic Style Sheet
-   Author: 
-   Date:   
+   Author: Johnney Foster  
+   Date:   4/29/2024
    
    Filename: tss_styles.css
 
@@ -20,32 +22,58 @@
 
 
 /* Heading Styles */
+h1{
+   front-size: 2.2em;
+   letter-spacing: 0.1em;
+}
 
-
-
+h2 {
+   front-size: 1.5em;
+   letter-spacing: 0.1em;
+}
 
 
 
 /* Aside and Blockquote Styles */
 
-
+aside{
+   front-size: 0.8em;
+}
 
 
 
 /* Navigation Styles */	
 
-
+nav{
+   front-size: 0.8em;
+}
+nav > ul {
+   ul{line-height: 2em;}
+}
 
 
 
 /* List Styles */
-
-
+article.syllabus ol {
+   list-sytle-type: upper-roman;
+}
+article.syllabus ol ol {
+   list-style-type: upper-alpha;
+}
+article.syllabus ol ol ol {
+   list-style-type: decimal;
+}
 
 
 
 /* Footer Styles */
-
+body > footer address {
+   background-color: rgd (222, 128, 60);
+   color: white; color: rgba(255, 255, 255, 0.7);
+   font: normal small-caps bold 0.9em/3em
+      Quicksand, Verdana, Geneva, sans-serif;
+      text-align: center;
+}
 
 
 
