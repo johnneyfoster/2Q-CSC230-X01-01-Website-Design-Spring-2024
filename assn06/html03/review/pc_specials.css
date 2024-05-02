@@ -4,15 +4,20 @@
    Review Assignment
    
    Style Sheet for the Pandaisia Chocolates Monthly Specials
-   Author: 
-   Date:   
+   Author: Johnney Foster
+   Date:   5/1/2024
    
    Filename: pc_specials.css
 
 */
 
 /* Page Body Styles */
-
+body {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 960px;
+	min-width: 640px;
+}
 
 
 /* Image Styles */
