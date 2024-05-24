@@ -1,20 +1,18 @@
 @charset "utf-8";
  
 @font-face {
-   font-family: Champagne;
-   src: url(cac_champagne.woff) format('woff'),
-        url(cac_champagne.ttf) format('ttf');
+	font-family: Champagne;
+	src: url(cac_champagne.woff) format('woff'),
+	     url(cac_champagne.ttf) format('ttf');
 }
  
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 3
    Tutorial Case
-   
    Display styles used with the Pandaisia Chocolates
-   infographic page  
-   
-   Filename: pc_styles4.css
+	infographic page  
+   Filename: pc_styles3.css
  
 */
  
@@ -32,7 +30,7 @@ body {
    max-width: 960px;
    min-width: 640px;
    background-color: rgb(138, 97, 51);
-   font-family: Verdana, Geneva, Arial, sans-serif;  
+   font-family: Verdana, Geneva, Arial, sans-serif;   
 }
  
 /* Page Header Styles */
@@ -48,10 +46,10 @@ body > header > nav.horizontalNavigation li {
 body > header > h1 {
    background-color: rgb(131, 97, 45);
    color: rgb(186, 186, 156);
-   font-family: Champagne, cursive;  
+   font-family: Champagne, cursive;   
    font-size: 2em;
-   font-weight: normal;  
-   letter-spacing: 0.1em;  
+   font-weight: normal;   
+   letter-spacing: 0.1em;   
    line-height: 2em;
    text-align: center;
 }
@@ -73,12 +71,12 @@ nav.horizontalNavigation a {
    text-align: center;
 }  
  
-nav.horizontalNavigation a:link,
+nav.horizontalNavigation a:link, 
 nav.horizontalNavigation a:visited {
    color: rgb(239, 220, 156);
 }
  
-nav.horizontalNavigation a:hover,
+nav.horizontalNavigation a:hover, 
 nav.horizontalNavigation a:active {
    background-color: rgb(71, 52, 29);
 }
@@ -113,7 +111,7 @@ div.infobox img {
  
 div.infobox p {
    color: rgb(239, 220, 156);
-   font-size: 1.2em;
+   font-size: 1.2em;	
    margin: 10px 0px;
    text-align: center;
 }
@@ -175,7 +173,7 @@ div#info6 {
 /* Seventh Infographic */
  
 div#info7 {
-   width: 25%;  
+   width: 25%;   
 }
  
 div#info7 p {
@@ -185,14 +183,14 @@ div#info7 p {
 /* Eighth Infographic */
  
 div#info8 {
-   width: 45%;  
+   width: 45%;   
 }
  
  
 div#info8 img {
    float: left;
    margin-right: 5%;
-   width: 35%;  
+   width: 35%;   
 }
  
 div#info8 p {

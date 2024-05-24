@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
    <!--
    New Perspectives on HTML5 and CSS3, 8th Edition
@@ -13,101 +13,85 @@
    Filename: pc_specials.html
    -->
    <meta charset="utf-8" />
-   <title>Pandaisia Chocolates Monthly Specials</title>
-
-</head>
+   <meta name="keywords" content="chocolate, chocolatier, cocoa, cacao, desserts" />
+   <title>Pandaisia Chocolates</title>
 <link href="pc_reset2.css" rel="stylesheet">
 <link href="pc_styles4.css" rel="stylesheet">
-<link href="pc_specials.html" rel="stylesheet">
-
+<link href="pc_specials.css" rel="stylesheet">
+</head>
 <body>
    <header>
       <img src="pc_logo.png" alt="Pandaisia Chocolates" />
-      <nav class="horizontal">
+      <nav class="horizontalNavigation">
          <ul>
             <li><a href="pc_home.html">Home</a></li>
-            <li><a href="#">The Store</a></li>
+            <li><a href="#">Online Store</a></li>
             <li><a href="#">My Account</a></li>
             <li><a href="#">Specials</a></li>
-            <li><a href="#">Reviews</a></li>
             <li><a href="#">Contact Us</a></li>
          </ul>
       </nav>
    </header>
-   
-   <section id="main">
-         <article id="intro">
-            <h1>March Specials</h1>
-            <p>Spring is coming and we've got some mouth-watering specials to help you celebrate
-               the change in seasons in style! Featured throughout March is our always-popular
-               Chocolate Covered Strawberries / Rose Fruit Syrup Combo, now at the special low
-               price of $29.95. For that special someone, consider our Red Rose Select box of 
-               Spring chocolates. Remember that for every order of $25 or more,
-               you receive a free truffle of your choice. For orders of $100 or more we throw
-               in a four-piece gift box of our signature chocolates and truffles.</p>
-         </article>
-         <section id="sub">
-            <div class="specials">
-               <img src="pc_photo7.png" alt="" />
-               <h1>Red Rose Select</h1>
-               <p>A classic collection of 18 signature chocolates served with a romantic 
-                  red rose for the special person in your life. One of our most popular
-                  box sets.</p>
-               <p>$24.95</p>
-               <p><a href="#">Order Now</a></p>
-            </div>
-            <div class="specials">
-               <img src="pc_photo8.png" alt="" />
-               <h1>Your Choice</h1>
-               <p>Build your own collection of signature truffles
-                  and chocolates. Now you can choose old favorites from our 24-year history
-                  of award-winning chocolates and sweets.</p>
-               <p>$32.55</p>
-               <p><a href="#">Order Now</a></p>
-            </div>
-            <div class="specials">
-               <img src="pc_photo9.png" alt="" />
-               <h1>Praline Signatures</h1>
-               <p>Delicious chocolate with delicious pralines presented in a beautiful
-                  and elegant box. Enjoy this fantastic collection inspired by the best
-                  Parisian chocolate shops.</p>
-               <p>$39.23</p>
-               <p><a href="#">Order Now</a></p>
-            </div>
-         </section>
-      </section>
-   
-      <aside>
-         <h1>Awards</h1>
-         <div id="award1">
-            <img src="pc_award1.png" alt="" />
-            <p>Best of Show</p>
-            <p>Confectioners Association</p>
-         </div>
-         <div id="award2">
-            <img src="pc_award2.png" alt="" />
-            <p>Five Stars</p>
-            <p>Confectioner Quarterly</p>
-         </div>
-         <div id="award3">
-            <img src="pc_award3.png" alt="" />
-            <p>Best Chocolate</p>
-            <p>Food World</p>
-         </div>
-         <div id="award4">
-            <img src="pc_award4.png" alt="" />
-            <p>Best Chocolate</p>
-            <p>Choco-Fest</p>
-         </div>
-         <div id="award5">
-            <img src="pc_award4.png" alt="" />
-            <p>Best Dessert</p>
-            <p>Choco-Fest</p>
-         </div>
-      </aside>
-   
+   <section id="leftColumn">
+      <p>Pandaisia Chocolates has been creating
+         gourmet chocolates and sweets for happy customers since
+         1993. Our hand-dipped truffles, savory chocolates, and
+         mouth-watering toffees are made from the finest
+         organic cacao. We use only natural ingredients with
+         wildflower honey replacing corn syrup and cream that comes
+         fresh from local dairy farms. Chocolate
+         is an art: come tour our gallery.</p>
+   </section>
+   <section id="rightColumn"> <img src="pc_photo1.png" alt="" />
+      <nav class="horizontalNavigation">
+         <ul>
+            <li><a class="photoLink" href="#">Chocolates <img src="pc_photo2.png" alt="" /></a></li>
+            <li><a class="photoLink" href="#">Fudges <img src="pc_photo3.png" alt="" /></a></li>
+            <li><a class="photoLink" href="#">Toffees <img src="pc_photo4.png" alt="" /></a></li>
+            <li><a class="photoLink" href="#">Truffles <img src="pc_photo5.png" alt="" /></a></li>
+         </ul>
+      </nav>
+   </section>
    <footer>
-      Pandaisia Chocolates &copy; 2021 All Rights Reserved
+      <nav class="verticalNavigation">
+         <h1>The Store</h1>
+         <ul>
+            <li><a href="pc_about.html">About Us</a></li>
+            <li><a href="#"><img id="fbicon" src="fbicon.png" alt="" />Facebook</a></li>
+            <li><a href="#"><img id="twittericon" src="twittericon.png" alt="" />Twitter</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="pc_info.html">Infographic</a></li>
+         </ul>
+      </nav>
+      <nav class="verticalNavigation">
+         <h1>Products</h1>
+         <ul>
+            <li><a href="#">Online Store</a></li>
+            <li><a href="#">Gift Boxes</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Specials</a></li>
+         </ul>
+      </nav>
+      <nav class="verticalNavigation">
+         <h1>Services</h1>
+         <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Tracking</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+      </nav>
+      <section id="contactInfo">
+         <h1>Location &amp; Hours</h1>
+         <p>414 Tree Lane <br />
+            Essex, Vermont 05452<br />
+            (802) 555-0414 </p>
+         <p>Mon - Thu: 9 a.m. - 8 p.m.<br />
+            Sat - Sun: 9 a.m. - 5 p.m.</p>
+         <p>Toll Free: 1-800-555-0414</p>
+      </section>
    </footer>
 </body>
 </html>

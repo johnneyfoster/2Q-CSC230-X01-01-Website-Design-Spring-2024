@@ -13,20 +13,20 @@
 
 /* Page Body Styles */
 body {
-	margin: 0 auto;
-	width: 95%;
-	max-width: 960px;
-	min-width: 640px;
+   margin: 0 auto;
+   width: 95%;
+   max-width: 960px;
+   min-width: 640px;
 }
-
-
+ 
+ 
 /* Image Styles */
 img{
    width: 100%;
    display: block;
 }
-
-
+ 
+ 
 /* Horizontal Navigation Styles */
 nav.horizontal li{
    width: 16.66%;
@@ -36,77 +36,77 @@ nav.horizontal li{
 nav a{
    display: block;
 }
-
-
-
-
+ 
+ 
+ 
+ 
 /* Grid Styles */
 div#outer{
    display: grid;
    grid-template-columns: 2fr 1fr;
    grid-column-gap: 20px;
 }
-
+ 
 header{
    column-span: 1/1
 }
-
+ 
 footer{
    column-span: 1/1
 }
-
+ 
 section#sub {
    display: grid;
    grid-template-columns: repeat(3,1fr);
 }
-
+ 
 /* Specials Styles */
    div.specials{
       min-height: 400px;
       outline: 1px dashed;
       color: rgb(71, 52, 29)
    }
-
-
+ 
+ 
 /* Award Styles */
 aside {  
-   position: relative; 
+   position: relative;
    height: 650px;
-    overflow: auto; 
+    overflow: auto;
  }
  
-
- aside > div { 
-   position: absolute; 
-   width: 30%; 
- } 
-
-
- div#award1 { 
+ 
+ aside > div {
+   position: absolute;
+   width: 30%;
+ }
+ 
+ 
+ div#award1 {
    top: 80px;
     left: 5%;
-  } 
-
-
- div#award2 { 
-   top: 280px; 
-   left: 60%; 
- } 
-
-
- div#award3 { 
-   top: 400px; 
-   left: 20%; 
- } 
-
-
- div#award4 { 
-   top: 630px; 
-   left: 45%; 
+  }
+ 
+ 
+ div#award2 {
+   top: 280px;
+   left: 60%;
  }
  
  
- div#award5 { 
-   top: 750px; 
-   left: 5%; 
+ div#award3 {
+   top: 400px;
+   left: 20%;
+ }
+ 
+ 
+ div#award4 {
+   top: 630px;
+   left: 45%;
+ }
+ 
+ 
+ div#award5 {
+   top: 750px;
+   left: 5%;
  }
