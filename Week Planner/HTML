@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"] {
+            width: 90%;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>Week Calendar</h1>
+    <table id="calendar">
+        <tr>
+            <th>Day</th>
+            <th>Activity</th>
+            <th>Date & Time</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td><input type="text" id="monday-activity" maxlength="100"></td>
+            <td><input type="datetime-local" id="monday-datetime"></td>
+            <td>
+                <button onclick="addActivity('monday')">Add</button>
+                <button onclick="markCompleted('monday')">Complete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td><input type="text" id="tuesday-activity" maxlength="100"></td>
+            <td><input type="datetime-local" id="tuesday-datetime"></td>
+            <td>
+                <button onclick="addActivity('tuesday')">Add</button>
+                <button onclick="markCompleted('tuesday')">Complete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td><input type="text" id="wednesday-activity" maxlength="100"></td>
+            <td><input type="datetime-local" id="wednesday-datetime"></td>
+            <td>
+                <button onclick="addActivity('wednesday')">Add</button>
+                <button onclick="markCompleted('wednesday')">Complete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td><input type="text" id="thursday-activity" maxlength="100"></td>
+            <td><input type="datetime-local" id="thursday-datetime"></td>
+            <td>
+                <button onclick="addActivity('thursday')">Add</button>
+                <button onclick="markCompleted('thursday')">Complete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td><input type="text" id="friday-activity" maxlength="100"></td>
+            <td><input type="datetime-local" id="friday-datetime"></td>
+            <td>
+                <button onclick="addActivity('friday')">Add</button>
+                <button onclick="markCompleted('friday')">Complete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td><input type="text" id="saturday-activity" maxlength="100"></td>
+            <td><input type="datetime-local" id="saturday-datetime"></td>
+            <td>
+                <button onclick="addActivity('saturday')">Add</button>
+                <button onclick="markCompleted('saturday')">Complete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td><input type="text" id="sunday-activity" maxlength="100"></td>
+            <td><input type="datetime-local" id="sunday-datetime"></td>
+            <td>
+                <button onclick="addActivity('sunday')">Add</button>
+                <button onclick="markCompleted('sunday')">Complete</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function addActivity(day) {
+            const activityInput = document.getElementById(`${day}-activity`);
+            const datetimeInput = document.getElementById(`${day}-datetime`);
+            const activity = activityInput.value.trim();
+            const datetime = datetimeInput.value;
+
+            if (activity && datetime) {
+                const cell = activityInput.parentElement;
+                cell.innerHTML = `${activity}<br>Due: ${datetime}`;
+            } else {
+                alert("Please enter both an activity and a date/time.");
+            }
+        }
+
+        function markCompleted(day) {
+            const cell = document.getElementById(`${day}-activity`).parentElement;
+            cell.classList.toggle('completed');
+        }
+    </script>
+</body>
+</html>

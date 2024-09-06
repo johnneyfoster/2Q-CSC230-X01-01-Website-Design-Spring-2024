@@ -1,0 +1,96 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Work Hours Tracker - June 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .total {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Work Hours Tracker - June 2024</h1>
+    <table>
+        <tr>
+            <th>Employee</th>
+            <th>Week 1</th>
+            <th>Week 2</th>
+            <th>Week 3</th>
+            <th>Week 4</th>
+            <th>Total Hours</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td><input type="number" id="john-week1" value="40"></td>
+            <td><input type="number" id="john-week2" value="40"></td>
+            <td><input type="number" id="john-week3" value="40"></td>
+            <td><input type="number" id="john-week4" value="40"></td>
+            <td id="john-total" class="total">160</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td><input type="number" id="jane-week1" value="35"></td>
+            <td><input type="number" id="jane-week2" value="38"></td>
+            <td><input type="number" id="jane-week3" value="40"></td>
+            <td><input type="number" id="jane-week4" value="37"></td>
+            <td id="jane-total" class="total">150</td>
+        </tr>
+        <tr>
+            <td>Bob Johnson</td>
+            <td><input type="number" id="bob-week1" value="42"></td>
+            <td><input type="number" id="bob-week2" value="39"></td>
+            <td><input type="number" id="bob-week3" value="41"></td>
+            <td><input type="number" id="bob-week4" value="40"></td>
+            <td id="bob-total" class="total">162</td>
+        </tr>
+        <tr>
+            <td>Alice Brown</td>
+            <td><input type="number" id="alice-week1" value="38"></td>
+            <td><input type="number" id="alice-week2" value="40"></td>
+            <td><input type="number" id="alice-week3" value="39"></td>
+            <td><input type="number" id="alice-week4" value="41"></td>
+            <td id="alice-total" class="total">158</td>
+        </tr>
+    </table>
+
+    <script>
+        function updateTotal(employee) {
+            const week1 = document.getElementById(`${employee}-week1`).value;
+            const week2 = document.getElementById(`${employee}-week2`).value;
+            const week3 = document.getElementById(`${employee}-week3`).value;
+            const week4 = document.getElementById(`${employee}-week4`).value;
+            const total = parseInt(week1) + parseInt(week2) + parseInt(week3) + parseInt(week4);
+            document.getElementById(`${employee}-total`).textContent = total;
+        }
+
+        const employees = ['john', 'jane', 'bob', 'alice'];
+        employees.forEach(employee => {
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById(`${employee}-week${i}`).addEventListener('input', () => updateTotal(employee));
+            }
+        });
+    </script>
+</body>
+</html>
